@@ -16,6 +16,8 @@ cleanup() {
 
 # Trap Ctrl+C to ensure cleanup
 trap cleanup SIGINT
+# Same but for EXIT
+trap cleanup EXIT
 
 echo $'--- Step 1: Generating SSH key ---'
 read -p $'Enter your email address for the SSH key: ' email
@@ -45,8 +47,6 @@ if [ $? -ne 0 ]; then
 fi
 
 echo $'Done!'
-echo $'\n--- Press ENTER to end the script and delete the keys ---'
+echo $'\n--- Press ENTER twice to end the script and delete the keys ---'
 read
-
-# Clean up
-cleanup
+read
