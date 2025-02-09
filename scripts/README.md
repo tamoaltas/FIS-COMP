@@ -12,9 +12,9 @@ bash ssh-setup.sh
 
 3. Copia la llave pública que aparece despúes del randomart de tu llave. El programa indica cuál es la llave.
 
-4. Ingresa el texto que copiaste en la sección correspondiente en <strong> SSH and GPG keys </strong> de la configuración de tu perfil. Haz click [aquí](https://github.com/settings/keys) para ir directamente a la configuración.
+4. Ingresa el texto que copiaste en la sección correspondiente en **SSH and GPG keys** de la configuración de tu perfil. Haz click [aquí](https://github.com/settings/keys) para ir directamente a la configuración.
 
-5. Regresa a la terminal y presiona `ENTER` para continuar y para que el programa inicie un agente de gestión de llaves. Si utilizaste una contraseña al crear tu llave en el <strong>Paso 1</strong>, el agente te pedirá que la ingreses en el <strong>Paso 3</strong>.
+5. Regresa a la terminal y presiona `ENTER` para continuar y para que el programa inicie un agente de gestión de llaves. Si utilizaste una contraseña al crear tu llave en el **Paso 1**, el agente te pedirá que la ingreses en el **Paso 3**.
 
 ¡Listo! Ahora puedes utilizar la funcionalidades de SSH de GitHub en tu sistema. Por ejemplo, puedes clonar un repositorio a través de SSH: 
 
@@ -23,3 +23,7 @@ git clone git@github.com:tamoaltas/FIS-COMP.git
 ```
 
 6. Presiona `ENTER` dos veces para salir del programa. Esto terminará el proceso del agente de SSH y borrará las llaves que se crearon: `~/.ssh/id_ed25519` y `~/.ssh/id_ed25519.pub`.
+
+## ¿Dudas? 
+
+* Guía oficial de GitHub: [About SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh)
